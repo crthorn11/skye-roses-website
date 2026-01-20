@@ -28,12 +28,9 @@ const NavbarComponent = () => {
                     {isDropdownOpen && (
                         <div className="dropdown-menu">
                             <ul>
-                                <li><a href="Signup">Signup</a></li>
-                                <li><a href="Login">Login</a></li>
-                                <li><a href="Store">Store</a></li>
-                                <li><a href="News">News</a></li>
-                                <li><a href="Forum">Forum</a></li>
-                                <li><a href="Account">Account</a></li>
+                                <li><a href="Gifts">Gifts</a></li>
+                                <li><a href="Gallery">Gallery</a></li>
+                                <li><a href="Contact Us">Contact Us</a></li>
                             </ul>
                         </div>
                     )}
