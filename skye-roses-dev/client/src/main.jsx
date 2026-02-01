@@ -5,6 +5,7 @@ import App from './App';
 import '../src/index.css';
 
 import HomePage from './pages/HomePage';
+import ContactPage from './pages/ContactPage';
 
 import { Carousel } from './components/Carousel';
 // import carouselImages from "./carouselImages";
@@ -25,8 +26,8 @@ const router = createBrowserRouter([
           element: <HomePage />,
         },
         {
-          path: 'dev',
-          element: <Carousel />,
+          path: 'ContactPage',
+          element: <ContactPage />,
         },
         ],
     },

@@ -4,12 +4,11 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-bottom: 0%;
 }
 
 .image {
   width: 100%;
-  height: null;
-  border-radius: 0.5rem;
   box-shadow: 0px 0px 7px #667;
 }
 

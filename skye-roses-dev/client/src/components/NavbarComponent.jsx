@@ -30,7 +30,7 @@ const NavbarComponent = () => {
                             <ul>
                                 <li><a href="Gifts">Gifts</a></li>
                                 <li><a href="Gallery">Gallery</a></li>
-                                <li><a href="Contact Us">Contact Us</a></li>
+                                <li><a href="ContactPage">Contact Us</a></li>
                             </ul>
                         </div>
                     )}
