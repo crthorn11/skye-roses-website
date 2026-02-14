@@ -19,7 +19,9 @@ function HomePage() {
     <div className="HPNav">
       <NavbarComponent />
       <Carousel />
+      
       <div className="circle-cont">
+        
         <ul className="circles">
           {circleData.map(({ size, img, label }) => (
             <li key={size} className={`circle-item ${size}`}>
@@ -30,6 +32,7 @@ function HomePage() {
           </li>
           ))}
         </ul>
+        
       </div>
       <div className="CP">
           <ContactPage />

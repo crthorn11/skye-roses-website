@@ -6,6 +6,7 @@ import '../src/index.css';
 
 import HomePage from './pages/HomePage';
 import ContactPage from './pages/ContactPage';
+import SmallGift from './pages/SmallGift';
 
 import { Carousel } from './components/Carousel';
 // import carouselImages from "./carouselImages";
@@ -29,6 +30,18 @@ const router = createBrowserRouter([
           path: 'ContactPage',
           element: <ContactPage />,
         },
+        {
+          path: 'dev',
+          element: <SmallGift />,
+        },
+        // {
+        //   path: '0',
+        //   element: <MedGift />,
+        // },
+        // {
+        //   path: '1',
+        //   element: <LrgGift />,
+        // },
         ],
     },
   ]);

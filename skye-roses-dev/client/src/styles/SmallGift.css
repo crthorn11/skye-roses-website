@@ -1,0 +1,15 @@
+.small-gifts {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.gifts-cont {
+    display: flex;
+    padding: 4em;
+}
+
+.image-cont {
+    height: 8em;
+    width: 8em;
+}
