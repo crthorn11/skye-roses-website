@@ -23,9 +23,10 @@ export const SmallGift = () => {
             {/* <Carousel /> */}
         </div>
         <div className='small-gifts'>
-          <div className='gifts-cont'>
+          <div className='product-card'>
             <img className='image-cont' src={sml} alt='sml img'/>
-            <p>wedwed</p>
+            <p className='cost'>FROM 75.00$</p>
+            <p className='description'>Small Gift with 7 sweets</p>
           </div>
         </div>
     </div>

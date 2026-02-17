@@ -4,12 +4,35 @@
     width: 100vw;
 }
 
-.gifts-cont {
+.product-card {
+    width: 10em;
+    height: 16em;
+    /* border-top-left-radius: .5em;
+    border-top-right-radius: .5em; */
+    border-radius: .5em;
+    padding: 0em;
     display: flex;
-    padding: 4em;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    background-color: rgb(255, 214, 214);
+    margin: 1.5em;
+    color: rgb(66, 66, 66);
+    font-family:'Courier New', Courier, monospace;
 }
 
 .image-cont {
-    height: 8em;
-    width: 8em;
+    height: 10em;
+    width: 10em;
+}
+
+.cost {
+    font-size: 1.35rem;
+    margin-top: .1em;
+}
+
+.description {
+    font-size: smaller;
+    margin-left: .5em;
+    font-weight: 600;
 }
