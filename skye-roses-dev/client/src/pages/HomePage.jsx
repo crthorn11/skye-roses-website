@@ -1,3 +1,7 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import { useNavigate } from 'react-router-dom';
+
 import '../styles/HomePage.css';
 
 import NavbarComponent from '../components/NavbarComponent';
@@ -9,12 +13,14 @@ import med from '../assets/images/gift4.jpeg';
 import lrg from '../assets/images/gift1.jpeg';
 
 const circleData = [
-  { size: 'sml', img: sml, label: "sml" },
-  { size: 'med', img: med, label: 'med' },
-  { size: 'lrg', img: lrg, label: 'lrg' }
+  { size: 'sml', img: sml, label: "sml", route: "/SmallGifts" },
+  { size: 'med', img: med, label: 'med', route: "/MediumGift" },
+  { size: 'lrg', img: lrg, label: 'lrg', route: "/LargeGift"}
 ];
 
 function HomePage() {
+  const navigate = useNavigate();
+
   return (
     <div className="HPNav">
       <NavbarComponent />
@@ -23,8 +29,13 @@ function HomePage() {
       <div className="circle-cont">
         
         <ul className="circles">
-          {circleData.map(({ size, img, label }) => (
-            <li key={size} className={`circle-item ${size}`}>
+          {circleData.map(({ size, img, label, route }) => (
+            <li 
+            key={size} 
+            className={`circle-item ${size}`}
+            onClick={() => navigate(route)}
+            >
+             
               <div className="circle-img-wrap">
                 <img src={img} />
                 <p className="circle-label">{label}</p>

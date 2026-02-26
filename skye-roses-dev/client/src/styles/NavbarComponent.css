@@ -114,3 +114,15 @@
     display: block;
     /* Show the menu if isDropdownOpen is true */
 }
+
+.cart-count {
+  position: absolute;
+  top: -5px;
+  right: 1em;
+  background: #ff4d4d;
+  color: white;
+  font-size: .8rem;
+  padding: .2em .6em;
+  border-radius: 50%;
+  font-weight: bold;
+}

@@ -26,7 +26,7 @@ const gifts = [
     { id: 8, img: gift8, price: 'PRICE 95.00', description: 'Big gift special' },
 ];
 
-export const SmallGift = () => {
+export const LargeGift = () => {
   const { addToCart } = useCart();   // <-- get addToCart
 
   return (
@@ -56,4 +56,4 @@ export const SmallGift = () => {
   );
 };
 
-export default SmallGift;
+export default LargeGift;
