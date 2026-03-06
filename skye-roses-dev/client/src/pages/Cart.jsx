@@ -1,15 +1,21 @@
 import '../styles/Cart.css';
 import NavbarComponent from '../components/NavbarComponent';
 import { useCart } from '../CartContext';
+import { useState } from 'react';
 
 const Cart = () => {
   const { cart, removeFromCart } = useCart();
+  const [instructions, setInstructions] = useState("");
 
-  // Calculate total price (extract number from "PRICE 50.00")
   const total = cart.reduce((sum, item) => {
     const numericPrice = parseFloat(item.price.replace("PRICE ", ""));
     return sum + numericPrice;
   }, 0);
+
+  const handleCheckout = () => {
+    console.log("Proceed to checkout");
+    console.log("Special Instructions:", instructions);
+  };
 
   return (
     <div className="cart-page">
@@ -42,15 +48,28 @@ const Cart = () => {
       </div>
 
       {cart.length > 0 && (
-        <div className="cart-total">
-          <h2>Total: ${total.toFixed(2)}</h2>
+        <>
+          <div className="instructions-box">
+            <label className="instructions-label">Special Instructions (optional)</label>
+            <textarea
+              className="instructions-textarea"
+              placeholder="Add any notes or special requests here..."
+              value={instructions}
+              onChange={(e) => setInstructions(e.target.value)}
+            />
+          </div>
 
-<button 
-  className="checkout-btn"
-  onClick={() => console.log("Proceed to checkout")}>
-      Checkout
-</button>
-        </div>
+          <div className="cart-total">
+            <h2>Total: ${total.toFixed(2)}</h2>
+
+            <button 
+              className="checkout-btn"
+              onClick={handleCheckout}
+            >
+              Checkout
+            </button>
+          </div>
+        </>
       )}
     </div>
   );

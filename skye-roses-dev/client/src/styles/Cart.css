@@ -68,6 +68,28 @@
   background: rgb(255, 80, 80);
 }
 
+.instructions-box {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.instructions-label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.instructions-textarea {
+  width: 80%;
+  min-height: 5em;
+  padding: 1%;
+  border-radius: 1px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  resize: vertical;
+}
+
 .cart-total {
   text-align: center;
   margin-top: 1.5em;
