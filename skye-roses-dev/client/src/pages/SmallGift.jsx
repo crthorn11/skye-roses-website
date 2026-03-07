@@ -1,7 +1,6 @@
 import '../styles/SmallGift.css';
 
 import NavbarComponent from '../components/NavbarComponent';
-import Carousel from '../components/Carousel';
 
 import { useCart } from '../CartContext';   // <-- import cart hook
 

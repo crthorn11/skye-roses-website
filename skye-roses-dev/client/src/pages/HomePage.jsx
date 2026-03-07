@@ -1,5 +1,3 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
 import { useNavigate } from 'react-router-dom';
 
 import '../styles/HomePage.css';
